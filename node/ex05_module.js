@@ -1,0 +1,8 @@
+console.log( console === this)
+console.log(module === this)
+console.log(module.exports === this)
+
+
+this.digaOi = function(){
+  console.log('OI')
+}
