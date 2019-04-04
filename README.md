@@ -1,7 +1,7 @@
-#PRIMEIRO REPOSITORIO
+# PRIMEIRO REPOSITORIO
 
 
-![./Hollow-Knight-Game-Wallpaper.jpg](?Unica imagem que eu tinha)
+![](./Hollow-Knight-Game-Wallpaper.jpg)
 
 
 Estou testando pra ver se funciona 
