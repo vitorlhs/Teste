@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app = 'app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Fundamentos de angular</title>
+    <script type="text/javascript" src="node_modules\angular\angular.min.js"></script>
+    <script type="text/javascript">
+      angular.module('app',[])
+      angular.module('app').filter('upper',function(){
+        return (input)=> {
+          return input.toUpperCase()
+        }
+      })
+      angular.module('app').filter('lower',function(){
+        return (input)=> {
+          return input.toLowerCase()
+        }
+      })
+      angular.module('app').controller('MeuController',[
+        function(){
+          const self = this
+          self.value = "texto"
+        }
+      ])
+      angular.module('app').controller('MeuController2',[
+        function(){
+          const self = this
+          self.value = "TEXTO"
+        }
+      ])
+    </script>
+  </head>
+  <body>
+    <div ng-controller = "MeuController as ctrl">
+      <h1>{{ctrl.value | upper}}</h1>
+      <input ng-model ="ctrl.value">
+    </div>
+    <div ng-controller = "MeuController2 as ctrl2">
+      <h1>{{ctrl2.value | lower}}</h1>
+      <input ng-model ="ctrl2.value">
+    </div>
+  </body>
+</html>
